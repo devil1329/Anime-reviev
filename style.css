@@ -1,0 +1,16 @@
+body{
+        background-color: #03162b;
+        color: #e0b591;
+}
+
+/* navBar */
+#NavBar{
+        opacity: 0.8;
+}
+
+/* carousel */
+#carouselExampleCaptions{
+        margin:auto;
+        height: 75%;
+        width: 75%;
+}
