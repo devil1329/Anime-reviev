@@ -14,7 +14,8 @@
         <!-- navbar -->
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark" id="NavBar">
                 <div class="container-fluid mx-5">
-                        <a class="navbar-brand" href="#">RevAN</a>
+                        <a class="navbar-brand" href="#"><img id="logo" src="images/logo.png" alt=""><span
+                                        id="logo-name">RevA</span></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                                 aria-label="Toggle navigation">
@@ -30,7 +31,9 @@
                                                 <a class="nav-link" href="#"><span class="navTitle">About</span></a>
                                         </li>
                                         <li class="nav-item">
-                                                <a class="nav-link" href="#"><span class="navTitle">Contact Us</span></a>
+                                                <a class="nav-link" data-bs-toggle="offcanvas" href="#contactUs"
+                                                        aria-controls="contactUs"><span
+                                                                class="navTitle">Contact</span></a>
                                         </li>
                                 </ul>
                         </div>
@@ -44,7 +47,7 @@
                                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
                                         aria-current="true" aria-label="Slide 1"></button>
                                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                                class="active" aria-label="Slide 2"></button>
+                                        class="active" aria-label="Slide 2"></button>
                                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                                         aria-label="Slide 3"></button>
                         </div>
@@ -58,7 +61,7 @@
                                         </div>
                                 </div>
                                 <div class="carousel-item active">
-                                        <img src="images/eminence-of-shadow.webp" class="w-100" alt="...">
+                                        <img src="images/eminence-of-shadow.png" class="w-100" alt="...">
                                         <div class="carousel-caption d-none d-md-block">
                                                 <h5 class="text-dark">Second slide label</h5>
                                                 <p class="text-dark">Some representative placeholder content for
@@ -91,10 +94,10 @@
         <!-- cards for animes -->
         <div class="container">
                 <div class="row row-content">
-                        <h5 class="title text-light">OverPowered MC</h5>
+                        <h5 class="title text-light">New Release</h5>
                 </div>
                 <div class="row row-content">
-                        <div class="col-sm-2">
+                        <div class="col-sm-4">
                                 <div class="card">
                                         <img src="images/blue-lock.jpg" alt="" class="card-img-top">
                                         <div class="card-body">
@@ -102,15 +105,22 @@
                                         </div>
                                 </div>
                         </div>
-                        <div class="col-sm-2">
+                        <div class="col-sm-4">
                                 <div class="card">
                                         <img src="images/blue-lock.jpg" alt="" class="card-img-top">
                                         <div class="card-body">
                                                 <h5 class="card-title text-light">Blue lock</h5>
+                                                <p>This anime is based on football. A guy named Ego
+                                                        desire to create the most powerful Striker of the world for the
+                                                        Japanese team so they can win World cup. The main character of
+                                                        this Isagi who is an average but doing hardwork to become a
+                                                        genius.</p>
+                                                <p> It is best to watch by someone who is interested in
+                                                        watching struggle based anime. </p>
                                         </div>
                                 </div>
                         </div>
-                        <div class="col-sm-2">
+                        <div class="col-sm-4">
                                 <div class="card">
                                         <img src="images/blue-lock.jpg" alt="" class="card-img-top">
                                         <div class="card-body">
@@ -121,9 +131,66 @@
                 </div>
         </div>
 
+        <!-- Contact us -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="contactUs" aria-labelledby="offcanvasRightLabel"
+                data-bs-backdrop="static">
+                <div class="container-fluid">
+                        <div class="row row-content">
+                                <button type="button" id="close" class="btn col-1 text-light"
+                                        data-bs-dismiss="offcanvas">Close</button>
+                                <!-- <button type="button" class="btn-close text-reset col-1" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button> -->
+                        </div>
+
+                </div>
+                <div class="container contact-form">
+                        <div class="contact-image">
+                                <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact" />
+                        </div>
+                        <form method="post" id="frm1">
+                                <h3>Drop Us a Message</h3>
+                                <div class="row row-content">
+                                        <div class="col-md-6">
+                                                <div class="form-group">
+                                                        <input type="text" name="txtName" class="form-control"
+                                                                placeholder="Your Name *" value="" />
+                                                </div>
+                                                <div class="form-group">
+                                                        <input type="email" name="txtEmail" class="form-control"
+                                                                placeholder="Your Email *" value="" />
+                                                </div>
+                                                <div class="form-group">
+                                                        <input type="tel" name="txtPhone" class="form-control"
+                                                                placeholder="Your Phone Number *" value="" />
+                                                </div>
+                                                <div class="form-group">
+                                                        <input type="submit" name="btnSubmit" class="btnContact"
+                                                                value="Send Message" />
+                                                </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                                <div class="form-group">
+                                                        <textarea name="txtMsg" class="form-control"
+                                                                placeholder="Your Message *"
+                                                                style="width: 100%; height: 150px;"></textarea>
+                                                </div>
+                                        </div>
+                                </div>
+                        </form>
+                </div>
+        </div>
+
         <!-- java scripts -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script>
+                $(document).ready(function () {
+                        $("#close").click(function () {
+                                $("#frm1").trigger('reset');
+                        });
+                });
+        </script>
 </body>
 
 </html>
