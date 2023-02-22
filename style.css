@@ -13,6 +13,12 @@ body {
 }
 
 /* navbar */
+.navTitle{
+        font-size: 25px;
+        font-style: oblique;
+        font-weight:bolder;
+}
+
 #NavBar {
         z-index: 10;
         background: #0c111b;
