@@ -2,6 +2,7 @@
         margin: 0;
         padding: 0;
         font-family: 'Gill Sans';
+        scroll-behavior: smooth;
 }
 
 body {
@@ -27,8 +28,9 @@ body {
 }
 
 #logo {
-        height: 40px;
-        width: 40px;
+        top: 0;
+        height: 30px;
+        width: 30px;
 }
 
 #logo-name {
@@ -39,15 +41,32 @@ body {
 }
 
 /* carousel  */
-.carousel-item img {
-        border-radius: 10px;
+#heroCarousel {
+        top: 0;
+        left: 0;
 }
 
-.carousel-caption h5,
-.carousel-caption p {
-        font: 500;
-        font-size: 30px;
+.hero-section .hero-inner {
+        position: absolute;
+        z-index: 12;
+        width: 100%;
+        text-align: center;
+        top: 32%;
+        left: 0;
 }
+
+.hero-section .carousel-inner {
+        height: 100vh;
+        width: 100%;
+}
+
+.hero-section .carousel-inner .carousel-item img {
+        height: 100vh;
+        width: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+}
+
 
 /* content*/
 .card-body {
@@ -97,11 +116,11 @@ body {
         width: 75%;
 }
 
-#contactUs #close{
+#contactUs #close {
         position: absolute;
         top: 0;
         right: 0;
-        background-color:#0072ff;
+        background-color: #0072ff;
 }
 
 .contact-form {
@@ -135,7 +154,7 @@ body {
         margin-bottom: -7%;
 }
 
-.contact-form form .row .form-group{
+.contact-form form .row .form-group {
         padding-bottom: 4%;
 }
 
