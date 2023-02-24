@@ -11,8 +11,12 @@ body {
 }
 
 .container {
-        padding-bottom: 20px;
+        margin-top: 30px;
 
+}
+
+footer{
+        margin-top: 30px;
 }
 
 /* navbar */
@@ -85,7 +89,9 @@ body {
 }
 
 .card:hover {
-        transform: scale(1.1);
+        transform: scale(1.37);
+        z-index: 3; 
+        scroll-behavior: smooth;
 }
 
 .card:hover img {
@@ -95,6 +101,8 @@ body {
 .card:hover .card-body {
         opacity: 1;
         background-color: #0c111b;
+        overflow-y: auto;
+        scrollbar-width: 2px;
 }
 
 .card-body p {
@@ -108,9 +116,10 @@ body {
         color: #fff;
         opacity: 0.9;
         text-transform: capitalize;
-        font-size: 22px;
+        font-size: 30px;
         font-weight: 500;
 }
+
 
 /* contact us  */
 #contactUs {
