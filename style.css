@@ -16,6 +16,7 @@ footer {
 }
 
 .hero-nav {
+  z-index: 10;
   position: fixed;
   top: 0;
   right: 0;
@@ -24,8 +25,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  min-height: 80px;
+  height: auto;
+  width: 100vw;
   overflow: hidden;
 }
 .hero-nav .hero-nav__inner {
@@ -43,6 +44,10 @@ footer {
 }
 .hero-nav.fixme:before {
   background: #0c111b;
+}
+
+#NavBar {
+  z-index: 10;
 }
 
 .navTitle {
@@ -64,6 +69,10 @@ footer {
   font-size: 30px;
 }
 
+.navBgColor {
+  background-color: #0c111b;
+}
+
 /* carousel  */
 #heroCarousel {
   position: absolute;
@@ -73,7 +82,7 @@ footer {
 }
 
 .carousel-inner {
-  height: 100vh;
+  height: auto;
   width: 100vw;
 }
 
@@ -99,17 +108,13 @@ footer {
 }
 
 .card:hover {
-  transform: scale(1.37);
+  transform: scale(1.2);
   z-index: 3;
   scroll-behavior: smooth;
 }
 
 .card:hover img {
   opacity: 0;
-}
-
-.card:hover img {
-        opacity: 0;
 }
 
 .card:hover .card-body {

@@ -9,14 +9,14 @@ var heroShinker = function() {
         if (scrollOffset < heroHeight) {
             $(hero).css('height', (heroHeight - scrollOffset));
         }
-        if (scrollOffset > (heroHeight - 150)) {
+        if (scrollOffset > (heroHeight - 220)) {
             hero.addClass('fixme');
-            navBar.addClass('navbar-dark');
-            carousel.fadeOut("slow");
+            navBar.addClass('navBgColor').addClass('navbar-dark');
+            carousel.fadeOut("fast");
     } else {
             hero.removeClass('fixme');
-            navBar.removeClass('navbar-dark');
-            carousel.fadeIn("slow");
+            carousel.fadeIn("fast");
+            navBar.removeClass('navBgColor').removeClass('navbar-dark');
         };
     });
 }
