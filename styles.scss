@@ -102,6 +102,10 @@ footer {
 }
 
 /* content*/
+.card-title{
+        font-size: medium;
+}
+
 .card-body {
         opacity: 0;
         width: 100%;
@@ -116,7 +120,7 @@ footer {
 }
 
 .card:hover {
-        transform: scale(1.2);
+        transform: scale(1.4);
         z-index: 3;
         scroll-behavior: smooth;
 }
@@ -133,7 +137,7 @@ footer {
 }
 
 .card-body p {
-        font-size: 15px;
+        font-size: x-small;
         font-weight: 200;
         font-style: italic;
         color: rgb(154, 164, 232);
