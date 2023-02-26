@@ -343,7 +343,9 @@ $scrollTime: 1s;
 
         &-1 {
                 .skw-page__half--left .skw-page__content {
-                        background:url(./images/favicon/android-chrome-512x512.png);
+                        background:url(./images/logo.png);
+                        background-repeat: no-repeat;
+                        background-size:cover;
                 }
                 
                 .skw-page__half--right .skw-page__content {
