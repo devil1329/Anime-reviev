@@ -11,12 +11,12 @@ var heroShinker = function() {
         }
         if (scrollOffset > (heroHeight - 220)) {
             hero.addClass('fixme');
-            navBar.addClass('navBgColor').addClass('navbar-dark');
+            navBar.addClass('navBgColor');
             carousel.fadeOut("fast");
     } else {
             hero.removeClass('fixme');
             carousel.fadeIn("fast");
-            navBar.removeClass('navBgColor').removeClass('navbar-dark');
+            navBar.removeClass('navBgColor');
         };
     });
 }

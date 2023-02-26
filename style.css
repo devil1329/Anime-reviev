@@ -54,6 +54,7 @@ footer {
   font-size: 25px;
   font-style: oblique;
   font-weight: bolder;
+  color: rgba(221, 174, 118, 0.8784313725);
 }
 
 #logo {
@@ -67,6 +68,7 @@ footer {
   margin-top: 10px;
   padding-left: 5px;
   font-size: 30px;
+  color: rgba(221, 174, 118, 0.8784313725);
 }
 
 .navBgColor {
@@ -136,16 +138,17 @@ footer {
 }
 
 .title {
-  color: #fff;
+  color: rgba(36, 169, 195, 0.7019607843);
   opacity: 0.9;
   text-transform: capitalize;
   font-size: 30px;
   font-weight: 500;
+  text-shadow: 2px 2px 5px;
 }
 
 /* contact us  */
 #contactUs {
-  background: -webkit-linear-gradient(left, #0072ff, #00c6ff);
+  background: -webkit-linear-gradient(left, #1f0103, #001217);
   width: 75%;
 }
 
@@ -153,11 +156,11 @@ footer {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: #0072ff;
+  background-color: #0d1b2b;
 }
 
 .contact-form {
-  background: #fff;
+  background: #462b2b;
   margin-top: 10%;
   margin-bottom: 5%;
   width: 70%;
@@ -195,7 +198,7 @@ footer {
   margin-bottom: 8%;
   margin-top: -10%;
   text-align: center;
-  color: #0062cc;
+  color: #ad3a3a;
 }
 
 .contact-form .btnContact {
